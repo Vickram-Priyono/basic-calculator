@@ -1,3 +1,7 @@
+* {
+  margin: 0;
+}
+
 body {
   font-family: "Arial", sans-serif;
   background-color: #f2f2f2;
@@ -36,16 +40,36 @@ h1 {
   background-color: #45a049;
 }
 
-#uiHasil {
+#container-hasil {
   background-color: #eee;
   padding: 10px;
-  margin: 10px 0;
+  margin: 0px;
   border: 1px solid #ddd;
   border-radius: 5px;
-  font-size: 24px;
+  font-size: 24px; /* Atur ukuran font ke nilai tetap atau gunakan px */
   min-width: 200px;
 }
 
-#uiHasil:hover {
+#container-hasil:hover {
   background-color: #ddd;
+}
+
+.button-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0;
+}
+
+.button {
+  flex: 1;
+}
+
+#calculator-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 300px;
+  margin: auto;
 }

@@ -9,34 +9,48 @@
   <body>
     <div>
       <div id="calculator-container">
-        <h1 id="uiHasil">|</h1>
-        <button class="button"
-          onclick="nilai = nilai + `1`; uiHasil.innerHTML = nilai;">1</button>
-        <button class="button"
-          onclick="nilai = nilai + `2`; uiHasil.innerHTML = nilai;">2</button>
-        <button class="button"
-          onclick="nilai = nilai + `3`; uiHasil.innerHTML = nilai;">3</button>
-        <button class="button"
-          onclick="nilai = nilai + `4`; uiHasil.innerHTML = nilai;">4</button>
-        <button class="button"
-          onclick="nilai = nilai + `5`; uiHasil.innerHTML = nilai;">5</button>
-        <button class="button"
-          onclick="nilai = nilai + `6`; uiHasil.innerHTML = nilai;">6</button>
-        <button class="button"
-          onclick="nilai = nilai + `7`; uiHasil.innerHTML = nilai;">7</button>
-        <button class="button"
-          onclick="nilai = nilai + `8`; uiHasil.innerHTML = nilai;">8</button>
-        <button class="button"
-          onclick="nilai = nilai + `9`; uiHasil.innerHTML = nilai;">9</button>
-        <button class="button"
-          onclick="nilai = nilai + `-`; uiHasil.innerHTML = nilai;">-</button>
-        <button class="button"
-          onclick="nilai = nilai + `0`; uiHasil.innerHTML = nilai;">0</button>
-        <button class="button"
-          onclick="nilai = nilai + `+`; uiHasil.innerHTML = nilai;">+</button>
-        <button class="button"
-          onclick="nilai = eval(nilai); uiHasil.innerHTML = nilai;">=</button>
-        <button class="button" onclick="nilai = ``; uiHasil.innerHTML = nilai;">clear</button>
+        <div id="container-hasil">
+          <h1 id="uiHasil"></h1>
+        </div>
+        <div class="button-row">
+          <button class="button"
+            onclick="nilai = nilai + '7'; uiHasil.innerHTML = nilai;">7</button>
+          <button class="button"
+            onclick="nilai = nilai + '8'; uiHasil.innerHTML = nilai;">8</button>
+          <button class="button"
+            onclick="nilai = nilai + '9'; uiHasil.innerHTML = nilai;">9</button>
+          <button class="button"
+            onclick="nilai = nilai + '-'; uiHasil.innerHTML = nilai;">-</button>
+        </div>
+        <div class="button-row">
+          <button class="button"
+            onclick="nilai = nilai + '4'; uiHasil.innerHTML = nilai;">4</button>
+          <button class="button"
+            onclick="nilai = nilai + '5'; uiHasil.innerHTML = nilai;">5</button>
+          <button class="button"
+            onclick="nilai = nilai + '6'; uiHasil.innerHTML = nilai;">6</button>
+          <button class="button"
+            onclick="nilai = nilai + '+'; uiHasil.innerHTML = nilai;">+</button>
+        </div>
+        <div class="button-row">
+          <button class="button"
+            onclick="nilai = nilai + '1'; uiHasil.innerHTML = nilai;">1</button>
+          <button class="button"
+            onclick="nilai = nilai + '2'; uiHasil.innerHTML = nilai;">2</button>
+          <button class="button"
+            onclick="nilai = nilai + '3'; uiHasil.innerHTML = nilai;">3</button>
+          <button class="button"
+            onclick="nilai = nilai + '*'; uiHasil.innerHTML = nilai;">*</button>
+        </div>
+        <div class="button-row">
+          <button class="button"
+            onclick="nilai = nilai + '0'; uiHasil.innerHTML = nilai;">0</button>
+          <button class="button" onclick="nilai = ''; uiHasil.innerHTML = '|';">C</button>
+          <button class="button"
+            onclick="nilai = eval(nilai); uiHasil.innerHTML = nilai;">=</button>
+          <button class="button"
+            onclick="nilai = nilai.slice(0, -1); uiHasil.innerHTML = nilai;">←</button>
+        </div>
       </div>
     </div>
 
